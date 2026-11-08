@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* ───────────────────────── Palette ───────────────────────── */
+@theme {
+  --color-pink: #ff5c9a;
+  --color-cyan: #42e8ff;
+  --color-ocean: #087ca7;
+  --color-purple: #8b5cf6;
+  --color-orange: #ff9e57;
+  --color-sand: #ffe4bd;
+  --color-midnight: #071b2d;
+  --font-display: "Monoton", "Outfit", system-ui, sans-serif;
+  --font-sans: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+/* Registered custom properties so the whole atmosphere can glide between phases */
+@property --sky-1 { syntax: "<color>"; inherits: true; initial-value: #040d1a; }
+@property --sky-2 { syntax: "<color>"; inherits: true; initial-value: #071b2d; }
+@property --sky-3 { syntax: "<color>"; inherits: true; initial-value: #2a1456; }
+@property --sky-4 { syntax: "<color>"; inherits: true; initial-value: #ff5c9a; }
+@property --sea-1 { syntax: "<color>"; inherits: true; initial-value: #0a2a4a; }
+@property --sea-2 { syntax: "<color>"; inherits: true; initial-value: #031020; }
+@property --page-1 { syntax: "<color>"; inherits: true; initial-value: #071b2d; }
+@property --page-2 { syntax: "<color>"; inherits: true; initial-value: #030b16; }
+@property --sun-x { syntax: "<percentage>"; inherits: true; initial-value: 75%; }
+@property --sun-h { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --moon-h { syntax: "<number>"; inherits: true; initial-value: 0.6; }
+@property --sun-o { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --moon-o { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --star-o { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --cloud-o { syntax: "<number>"; inherits: true; initial-value: 0.1; }
+@property --win-o { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --neon-o { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --grid-o { syntax: "<number>"; inherits: true; initial-value: 0.5; }
+@property --slit-o { syntax: "<number>"; inherits: true; initial-value: 1; }
+
+:root {
+  transition:
+    --sky-1 2.4s ease, --sky-2 2.4s ease, --sky-3 2.4s ease, --sky-4 2.4s ease,
+    --sea-1 2.4s ease, --sea-2 2.4s ease, --page-1 2.4s ease, --page-2 2.4s ease,
+    --sun-x 3s ease, --sun-h 3s ease, --moon-h 3s ease, --sun-o 2.4s ease,
+    --moon-o 2.4s ease, --star-o 2.4s ease, --cloud-o 2.4s ease, --win-o 2.4s ease,
+    --neon-o 2.4s ease, --grid-o 2.4s ease, --slit-o 2.4s ease;
+}
+
+/* ───────────────────────── Phases ───────────────────────── */
+/* NIGHT (default): 8 PM – 5 AM */
+html,
+html[data-phase="night"] {
+  --sky-1: #030a16; --sky-2: #071b2d; --sky-3: #2a1163; --sky-4: #c0388f;
+  --sea-1: #0b3558; --sea-2: #030f1e;
+  --page-1: #071b2d; --page-2: #030b16;
+  --sun-x: 78%; --sun-h: -0.08; --moon-h: 0.6;
+  --sun-o: 0; --moon-o: 1; --star-o: 1; --cloud-o: 0.12; --win-o: 1; --neon-o: 1; --grid-o: 0.55; --slit-o: 1;
+  --sun-1: #ffd36a; --sun-2: #ff5c9a; --sun-glow: rgba(255, 92, 154, 0.5);
+  --cloud: #5a5fa8; --glitter: #cfe6ff; --glitter-o: 0.55;
+  --skyline: #050d1a; --skyline-far: #0c2040; --window: #ffd88a;
+  --wave-1: #0a3f69; --wave-2: #071f3a; --foam: rgba(190, 230, 255, 0.35);
+  --sand-1: #3b3358; --sand-2: #1d1a38;
+  --palm: #02080f; --palm-hi: #0e3b4f;
+  --hero-ink: #ffffff; --hero-ink-soft: rgba(255, 255, 255, 0.86);
+  --hero-title-shadow: 0 0 6px #fff, 0 0 18px #ff5c9a, 0 0 42px #ff5c9a, 0 0 80px rgba(139, 92, 246, 0.8);
+  --scrim: rgba(3, 10, 22, 0.42); --hero-soft-shadow: 0 1px 12px rgba(3,10,22,0.9);
+  --pill-bg: rgba(7, 27, 45, 0.55); --pill-border: rgba(66, 232, 255, 0.5);
+}
+/* MORNING: 5 AM – 11 AM */
+html[data-phase="morning"] {
+  --sky-1: #3aa9d6; --sky-2: #86cfe3; --sky-3: #ffc4a0; --sky-4: #ffe6c2;
+  --sea-1: #6fdde6; --sea-2: #1a9dbf;
+  --page-1: #0a3f5e; --page-2: #082c47;
+  --sun-x: 24%; --sun-h: 0.05;  --moon-h: 0.6;
+  --sun-o: 1; --moon-o: 0; --star-o: 0; --cloud-o: 0.85; --win-o: 0.12; --neon-o: 0.15; --grid-o: 0; --slit-o: 0;
+  --sun-1: #fff1c4; --sun-2: #ffab6b; --sun-glow: rgba(255, 190, 120, 0.7);
+  --cloud: #fff1e6; --glitter: #ffffff; --glitter-o: 0.8;
+  --skyline: #2f6e8c; --skyline-far: #7fbdd0; --window: #fff6d8;
+  --wave-1: #35bfd6; --wave-2: #1a95b8; --foam: rgba(255, 255, 255, 0.55);
+  --sand-1: #ffe4bd; --sand-2: #f2c996;
+  --palm: #0d5a4b; --palm-hi: #3fae8f;
+  --hero-ink: #071b2d; --hero-ink-soft: rgba(7, 27, 45, 0.88);
+  --hero-title-shadow: 0 2px 0 rgba(255, 255, 255, 0.6), 0 0 28px rgba(255, 255, 255, 0.55), 3px 4px 0 rgba(255, 92, 154, 0.55);
+  --scrim: rgba(255, 244, 232, 0.5); --hero-soft-shadow: 0 0 14px rgba(255,255,255,0.75);
+  --pill-bg: rgba(255, 255, 255, 0.5); --pill-border: rgba(8, 124, 167, 0.55);
+}
+/* AFTERNOON: 11 AM – 5 PM */
+html[data-phase="afternoon"] {
+  --sky-1: #0b86cf; --sky-2: #38b8ec; --sky-3: #8fe0f7; --sky-4: #dff8ff;
+  --sea-1: #2de3d6; --sea-2: #087ca7;
+  --page-1: #06507a; --page-2: #04365a;
+  --sun-x: 70%; --sun-h: 0.6; --moon-h: 0.6;
+  --sun-o: 1; --moon-o: 0; --star-o: 0; --cloud-o: 1; --win-o: 0.05; --neon-o: 0.1; --grid-o: 0; --slit-o: 0;
+  --sun-1: #ffffff; --sun-2: #ffe36e; --sun-glow: rgba(255, 238, 150, 0.85);
+  --cloud: #ffffff; --glitter: #ffffff; --glitter-o: 0.9;
+  --skyline: #1b6d94; --skyline-far: #6cc3e0; --window: #ffffff;
+  --wave-1: #19c5d0; --wave-2: #0a8fb8; --foam: rgba(255, 255, 255, 0.7);
+  --sand-1: #ffe9c6; --sand-2: #f7d39f;
+  --palm: #0b7a4f; --palm-hi: #62d28f;
+  --hero-ink: #04263f; --hero-ink-soft: rgba(4, 38, 63, 0.9);
+  --hero-title-shadow: 0 2px 0 rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 3px 4px 0 rgba(255, 92, 154, 0.5);
+  --scrim: rgba(255, 255, 255, 0.45); --hero-soft-shadow: 0 0 14px rgba(255,255,255,0.8);
+  --pill-bg: rgba(255, 255, 255, 0.55); --pill-border: rgba(8, 124, 167, 0.6);
+}
+/* EVENING: 5 PM – 8 PM */
+html[data-phase="evening"] {
+  --sky-1: #2a0f55; --sky-2: #8b3fb8; --sky-3: #ff5c9a; --sky-4: #ff9e57;
+  --sea-1: #ff7aa8; --sea-2: #3a1465;
+  --page-1: #2a1050; --page-2: #140a34;
+  --sun-x: 70%; --sun-h: 0.02; --moon-h: 0.6;
+  --sun-o: 1; --moon-o: 0; --star-o: 0.25; --cloud-o: 0.55; --win-o: 0.85; --neon-o: 0.9; --grid-o: 0.4; --slit-o: 1;
+  --sun-1: #ffe27a; --sun-2: #ff4d8d; --sun-glow: rgba(255, 110, 130, 0.75);
+  --cloud: #ff9cc0; --glitter: #ffe0a8; --glitter-o: 0.8;
+  --skyline: #1a0a38; --skyline-far: #5a2a78; --window: #ffc46b;
+  --wave-1: #a9357f; --wave-2: #4a1a6e; --foam: rgba(255, 200, 220, 0.5);
+  --sand-1: #e9a98a; --sand-2: #a8587a;
+  --palm: #14062a; --palm-hi: #7a2c78;
+  --hero-ink: #ffffff; --hero-ink-soft: rgba(255, 255, 255, 0.92);
+  --hero-title-shadow: 0 0 6px #fff, 0 0 20px #ff9e57, 0 0 46px #ff5c9a, 0 0 90px rgba(139, 92, 246, 0.8);
+  --scrim: rgba(24, 6, 48, 0.42); --hero-soft-shadow: 0 1px 14px rgba(24,6,48,0.9);
+  --pill-bg: rgba(42, 15, 85, 0.55); --pill-border: rgba(255, 158, 87, 0.65);
+}
+
+/* ───────────────────────── Base ───────────────────────── */
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #eaf6ff;
+  background: linear-gradient(180deg, var(--page-1), var(--page-2));
+  background-color: var(--page-2);
+  overflow-x: hidden;
+}
+::selection { background: #ff5c9a; color: #fff; }
+
+:focus-visible { outline: 3px solid #42e8ff; outline-offset: 3px; border-radius: 6px; }
+
+@media (pointer: fine) and (hover: hover) {
+  .has-custom-cursor, .has-custom-cursor * { cursor: none !important; }
+}
+
+/* ───────────────────────── Reusable bits ───────────────────────── */
+.font-display { font-family: var(--font-display); }
+.grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: overlay; opacity: 0.22;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .8 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.glass {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03)), rgba(7, 27, 45, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+}
+
+.neon-pink { color: #ff5c9a; text-shadow: 0 0 8px rgba(255, 92, 154, 0.9), 0 0 26px rgba(255, 92, 154, 0.55); }
+.neon-cyan { color: #42e8ff; text-shadow: 0 0 8px rgba(66, 232, 255, 0.9), 0 0 26px rgba(66, 232, 255, 0.5); }
+.text-sunset {
+  background: linear-gradient(90deg, #ff9e57, #ff5c9a 45%, #8b5cf6);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.text-lagoon {
+  background: linear-gradient(90deg, #42e8ff, #8b5cf6 70%, #ff5c9a);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Neon button */
+.btn-neon {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+  padding: 0.95rem 1.7rem; border-radius: 999px; font-weight: 700; letter-spacing: 0.04em; text-decoration: none;
+  color: #fff; background: linear-gradient(100deg, #ff5c9a, #8b5cf6);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35) inset, 0 10px 30px -8px rgba(255, 92, 154, 0.8), 0 0 28px rgba(255, 92, 154, 0.35);
+  transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.4), box-shadow 0.3s ease, filter 0.3s ease;
+  overflow: hidden; isolation: isolate; cursor: pointer; border: 0;
+}
+.btn-neon::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; transform: translateX(-120%) skewX(-20deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent); transition: transform 0.7s ease;
+}
+.btn-neon:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 16px 40px -8px rgba(255, 92, 154, 0.95), 0 0 50px rgba(66, 232, 255, 0.45); }
+.btn-neon:hover::before { transform: translateX(120%) skewX(-20deg); }
+.btn-neon:active { transform: translateY(0) scale(0.98); }
+.btn-ghost {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; padding: 0.9rem 1.5rem; border-radius: 999px;
+  font-weight: 600; text-decoration: none; color: #eaf6ff; background: rgba(7, 27, 45, 0.35); border: 1.5px solid rgba(66, 232, 255, 0.7);
+  box-shadow: 0 0 18px rgba(66, 232, 255, 0.25), inset 0 0 14px rgba(66, 232, 255, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease; cursor: pointer;
+}
+.btn-ghost:hover { transform: translateY(-3px); background: rgba(66, 232, 255, 0.16); box-shadow: 0 0 34px rgba(66, 232, 255, 0.55), inset 0 0 18px rgba(66, 232, 255, 0.2); }
+html[data-phase="morning"] .hero-ghost, html[data-phase="afternoon"] .hero-ghost { color: #04263f; background: rgba(255, 255, 255, 0.55); border-color: #087ca7; }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(34px) scale(0.98); filter: blur(6px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.9s ease; transition-delay: var(--d, 0ms); }
+.reveal.in { opacity: 1; transform: none; filter: none; }
+
+/* ───────────────────────── Scenery animation ───────────────────────── */
+@keyframes wave-slide { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+@keyframes wave-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 6px; } }
+@keyframes tide { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+@keyframes cloud-drift { from { transform: translate3d(calc(-30vw - var(--cx, 0vw)), 0, 0); } to { transform: translate3d(calc(110vw - var(--cx, 0vw)), 0, 0); } }
+@keyframes twinkle { 0%, 100% { opacity: 0.25; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.25); } }
+@keyframes win-flicker { 0%, 100% { opacity: 1; } 47% { opacity: 1; } 50% { opacity: 0.15; } 53% { opacity: 1; } }
+@keyframes sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
+@keyframes frond { 0%, 100% { transform: rotate(-3.5deg); } 50% { transform: rotate(3.5deg); } }
+@keyframes glitter { 0%, 100% { opacity: 0; transform: scaleX(0.4); } 50% { opacity: 1; transform: scaleX(1); } }
+@keyframes shoot { 0% { transform: translate3d(0, 0, 0) rotate(-28deg); opacity: 0; } 4% { opacity: 1; } 14% { transform: translate3d(-340px, 190px, 0) rotate(-28deg); opacity: 0; } 100% { transform: translate3d(-340px, 190px, 0) rotate(-28deg); opacity: 0; } }
+@keyframes float-y { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@keyframes neon-flicker { 0%, 18%, 22%, 62%, 64%, 100% { opacity: 1; } 20%, 63% { opacity: 0.55; } }
+@keyframes grid-scroll { from { background-position: 0 0, 0 0; } to { background-position: 0 80px, 0 0; } }
+@keyframes ripple { from { transform: translate(-50%, -50%) scale(0); opacity: 0.8; } to { transform: translate(-50%, -50%) scale(1); opacity: 0; } }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(66, 232, 255, 0.55); } 100% { box-shadow: 0 0 0 16px rgba(66, 232, 255, 0); } }
+@keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes sunrise-in { from { opacity: 0; transform: translateY(40px) scale(0.96); } to { opacity: 1; transform: none; } }
+
+.anim-wave { animation: wave-slide var(--dur, 24s) linear infinite; will-change: transform; }
+.anim-bob { animation: wave-bob var(--bob, 5s) ease-in-out infinite; }
+.anim-tide { animation: tide 7s ease-in-out infinite; }
+.anim-sway { animation: sway var(--sway, 7s) ease-in-out infinite; transform-origin: 50% 100%; }
+.anim-frond { animation: frond var(--fd, 5s) ease-in-out infinite; animation-delay: var(--dl, 0s); transform-origin: 0 0; }
+.anim-float { animation: float-y var(--fl, 6s) ease-in-out infinite; }
+.anim-flicker { animation: neon-flicker 6s linear infinite; }
+.win-flicker { animation: win-flicker 7s linear infinite; }
+.skeleton { background: linear-gradient(100deg, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0.16) 50%, rgba(255,255,255,0.05) 80%); background-size: 200% 100%; animation: shimmer 1.6s linear infinite; border-radius: 0.9rem; }
+
+/* retro-futuristic grid */
+.retro-grid {
+  background-image:
+    linear-gradient(rgba(66, 232, 255, 0.55) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(255, 92, 154, 0.55) 1.5px, transparent 1.5px);
+  background-size: 80px 80px, 80px 80px; animation: grid-scroll 4s linear infinite;
+}
+
+/* sun slits */
+.sun-slits {
+  background: repeating-linear-gradient(180deg, transparent 0 11px, var(--sky-4) 11px 12px, transparent 12px 20px, var(--sky-4) 20px 23px, transparent 23px 29px, var(--sky-4) 29px 34px);
+  opacity: var(--slit-o);
+  -webkit-mask-image: linear-gradient(180deg, transparent 38%, #000 70%); mask-image: linear-gradient(180deg, transparent 38%, #000 70%);
+}
+
+/* hide scrollbar utility for filter strips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+dialog.project-dialog { padding: 0; border: 0; background: transparent; max-width: none; max-height: none; width: 100%; height: 100%; color: inherit; }
+dialog.project-dialog::backdrop { background: rgba(3, 11, 22, 0.78); backdrop-filter: blur(8px); }
+
+/* ───────────────────────── Reduced motion ───────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; filter: none; }
+  .anim-wave, .anim-bob, .anim-tide, .anim-sway, .anim-frond, .anim-float, .win-flicker, .anim-flicker, .cloud { animation: none !important; }
+  .retro-grid { animation: none !important; }
+  :root { transition: none; }
+}
+
+/* animated progress fill, triggered by Reveal's `.in` */
+.bar-fill { width: 0; transition: width 1.3s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s; }
+.in .bar-fill, .bar-fill.run { width: var(--w); }

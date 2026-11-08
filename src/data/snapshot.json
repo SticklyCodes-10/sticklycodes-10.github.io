@@ -1,0 +1,444 @@
+{
+ "fetchedAt": "2026-11-08T05:58:46.807Z",
+ "user": {
+  "login": "SticklyCodes-10",
+  "name": "sudo: name not found",
+  "bio": null,
+  "avatar_url": "https://avatars.githubusercontent.com/u/168277407?v=4",
+  "html_url": "https://github.com/SticklyCodes-10",
+  "blog": "",
+  "location": null,
+  "email": null,
+  "twitter_username": null,
+  "public_repos": 4,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2024-04-27T12:07:03Z"
+ },
+ "repos": [
+  {
+   "name": "whatbash",
+   "description": "The Source Code for WhatBash (made specially for sr [you wouldnt know...])",
+   "html_url": "https://github.com/SticklyCodes-10/whatbash",
+   "homepage": "https://sticklycodes-10.github.io/whatbash/",
+   "language": "TypeScript",
+   "fork": false,
+   "archived": false,
+   "stargazers_count": 0,
+   "forks_count": 0,
+   "open_issues_count": 0,
+   "created_at": "2026-11-08T04:32:13Z",
+   "pushed_at": "2026-11-08T05:41:27Z",
+   "updated_at": "2026-11-08T05:41:31Z",
+   "size": 69,
+   "default_branch": "main",
+   "topics": [],
+   "has_pages": true,
+   "has_issues": true
+  },
+  {
+   "name": "PrismLauncher",
+   "description": "WARN: PROCEED WITH CAUTION ~ A custom launcher for Minecraft that allows you to easily manage multiple installations of Minecraft at once (Fork of MultiMC)",
+   "html_url": "https://github.com/SticklyCodes-10/PrismLauncher",
+   "homepage": "https://prismlauncher.org",
+   "language": null,
+   "fork": true,
+   "archived": false,
+   "stargazers_count": 0,
+   "forks_count": 0,
+   "open_issues_count": 0,
+   "created_at": "2026-10-14T14:18:43Z",
+   "pushed_at": "2026-10-13T19:55:50Z",
+   "updated_at": "2026-10-14T14:18:44Z",
+   "size": 45977,
+   "default_branch": "develop",
+   "topics": [],
+   "has_pages": false,
+   "has_issues": false
+  },
+  {
+   "name": "editorweb.github.io",
+   "description": "have to be pushed to organization repo",
+   "html_url": "https://github.com/SticklyCodes-10/editorweb.github.io",
+   "homepage": "https://sticklycodes-10.github.io/editorweb.github.io/",
+   "language": "TypeScript",
+   "fork": false,
+   "archived": false,
+   "stargazers_count": 0,
+   "forks_count": 0,
+   "open_issues_count": 0,
+   "created_at": "2026-07-31T07:24:48Z",
+   "pushed_at": "2026-07-31T09:20:07Z",
+   "updated_at": "2026-07-31T09:20:27Z",
+   "size": 3052,
+   "default_branch": "main",
+   "topics": [],
+   "has_pages": true,
+   "has_issues": true
+  },
+  {
+   "name": "SticklyCodes-10",
+   "description": "ME!!!!!!!!!!!!!!!!!!",
+   "html_url": "https://github.com/SticklyCodes-10/SticklyCodes-10",
+   "homepage": null,
+   "language": null,
+   "fork": false,
+   "archived": false,
+   "stargazers_count": 0,
+   "forks_count": 0,
+   "open_issues_count": 0,
+   "created_at": "2026-07-30T14:18:50Z",
+   "pushed_at": "2026-07-30T14:50:01Z",
+   "updated_at": "2026-07-30T14:51:22Z",
+   "size": 3,
+   "default_branch": "main",
+   "topics": [],
+   "has_pages": false,
+   "has_issues": true
+  }
+ ],
+ "deep": {
+  "whatbash": {
+   "languages": {
+    "TypeScript": 120826,
+    "CSS": 1681,
+    "HTML": 656
+   },
+   "commits": [
+    {
+     "sha": "387a8bd",
+     "message": "Update title in index.html",
+     "date": "2026-11-08T05:41:27Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/387a8bd46df7bb1fbf38ff2d0a8c094d9786068e",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "5a66b0c",
+     "message": "Update loading messages and title in App.tsx",
+     "date": "2026-11-08T05:39:53Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/5a66b0ca59f130269ec2c206f60f0814f262ad2c",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "72a32eb",
+     "message": "Test Update",
+     "date": "2026-11-08T05:32:17Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/72a32ebeb0e25fa58a301c7d292fa60f6304f04e",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "19c0eec",
+     "message": "Add GitHub Actions workflow for GitHub Pages deployment",
+     "date": "2026-11-08T04:58:49Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/19c0eecf7fa2d32394787af73aae3048b8260fd2",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "691b737",
+     "message": "Updated vite.config.ts",
+     "date": "2026-11-08T04:49:08Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/691b7378b26a748d68789490f701a835fce97bd0",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "b96a199",
+     "message": "Uploaded Files",
+     "date": "2026-11-08T04:33:59Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/b96a199b90d1380b4b4c4613c822ca36f89d5c9f",
+     "repo": "whatbash"
+    },
+    {
+     "sha": "8d6684f",
+     "message": "Initial commit",
+     "date": "2026-11-08T04:32:15Z",
+     "url": "https://github.com/SticklyCodes-10/whatbash/commit/8d6684f666d05057454cd83dcfeb6bfd79445c77",
+     "repo": "whatbash"
+    }
+   ],
+   "pulls": [],
+   "deps": [
+    "cannon-es",
+    "clsx",
+    "react",
+    "react-dom",
+    "tailwind-merge",
+    "three",
+    "@tailwindcss/vite",
+    "@types/node",
+    "@types/react",
+    "@types/react-dom",
+    "@types/three",
+    "@vitejs/plugin-react",
+    "tailwindcss",
+    "typescript",
+    "vite",
+    "vite-plugin-singlefile"
+   ],
+   "hasReadme": false
+  },
+  "PrismLauncher": {
+   "languages": {
+    "C++": 4149182,
+    "CMake": 126075,
+    "Java": 110123,
+    "C": 25210,
+    "Objective-C++": 14918,
+    "Nix": 13539,
+    "Python": 7123,
+    "Shell": 4110,
+    "HTML": 2674,
+    "Dockerfile": 2293,
+    "GLSL": 1851
+   },
+   "commits": [],
+   "pulls": [],
+   "deps": [],
+   "hasReadme": true
+  },
+  "editorweb.github.io": {
+   "languages": {
+    "TypeScript": 42964,
+    "CSS": 1632,
+    "HTML": 495
+   },
+   "commits": [
+    {
+     "sha": "57af9c9",
+     "message": "Merge pull request #4 from SticklyCodes-10/revert-3-arena/019fb768-editorweb-github-io",
+     "date": "2026-07-31T09:20:07Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/57af9c9fb658dd5a85190933d6ab08763d2b2fd8",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "df61983",
+     "message": "Revert \"Fix GitHub Pages 404: ship built site at repo root\"",
+     "date": "2026-07-31T09:19:46Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/df6198397109f7122985a6e656539270ab684b76",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "e89dd11",
+     "message": "Merge pull request #3 from SticklyCodes-10/arena/019fb768-editorweb-github-io",
+     "date": "2026-07-31T09:12:33Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/e89dd1190e8390ccc91072bac16c45e54aa45f8a",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "38147c5",
+     "message": "Fix GitHub Pages: build production bundle to repo root instead of shipping raw /src/main.tsx",
+     "date": "2026-07-31T09:05:35Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/38147c5e249da3f136d96fa6c2f6136d46155dd8",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "2e683f9",
+     "message": "Uploaded BASE Website",
+     "date": "2026-07-31T08:56:16Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/2e683f9e5e57c08c4f619b75c6938fb95fd10b67",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "a20b4a9",
+     "message": "Add sample website content to index.html",
+     "date": "2026-07-31T08:43:32Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/a20b4a969207f2e8645ef9529b21d78c2f924cff",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "fda1504",
+     "message": "Delete style.css",
+     "date": "2026-07-31T08:43:05Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/fda1504fcae719afbccebe8f0a31ef1b9629c258",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "e3a23e5",
+     "message": "Delete app.js",
+     "date": "2026-07-31T08:42:50Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/e3a23e5c46f4df3783cff0c6fd847258ae2c6617",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "fa9e869",
+     "message": "Delete scripts directory",
+     "date": "2026-07-31T08:42:32Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/fa9e8690f20cfc8f5de3d4e524ecfb2fa4cfd1ca",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "e8f64bb",
+     "message": "Delete assets directory",
+     "date": "2026-07-31T08:42:22Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/e8f64bb2ad599649cc557410e28460091569bda1",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "9e553f4",
+     "message": "Delete .github/workflow-setup directory",
+     "date": "2026-07-31T08:42:10Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/9e553f4c4e24cd1f95c199d51f4f163558133a3f",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "ac7c895",
+     "message": "Rename update-channel.yml to main.yml",
+     "date": "2026-07-31T08:35:58Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/ac7c895fbe2077eb8ce4295f711155b7711dcb3d",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "f0278bd",
+     "message": "feat: scrape @the.stickly into assets (pfp, banner, stats, latest videos)",
+     "date": "2026-07-31T08:16:31Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/f0278bda9d2258a5ea18ddf2ade3b008ba390a6d",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "78dec56",
+     "message": "Fixed Typo",
+     "date": "2026-07-31T07:43:36Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/78dec56d6b7e7c77cd9c26ca065a5b671be01390",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "660e149",
+     "message": "Merge pull request #1 from SticklyCodes-10/arena/019fb714-editorweb-github-io",
+     "date": "2026-07-31T07:40:17Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/660e149ec92485dc9e06bc3b99ee557edd8fe715",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "3f963db",
+     "message": "feat: modern responsive portfolio for @the.stickly with demo data",
+     "date": "2026-07-31T07:38:53Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/3f963dbdffea13e2b648c47748b295562e4cf230",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "sha": "c1f8457",
+     "message": "Initial commit",
+     "date": "2026-07-31T07:24:49Z",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/commit/c1f8457cdca80450000e2a702b7329779fd12a75",
+     "repo": "editorweb.github.io"
+    }
+   ],
+   "pulls": [
+    {
+     "number": 4,
+     "title": "Revert \"Fix GitHub Pages 404: ship built site at repo root\"",
+     "state": "closed",
+     "merged_at": "2026-07-31T09:20:07Z",
+     "created_at": "2026-07-31T09:19:54Z",
+     "author": "SticklyCodes-10",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/pull/4",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "number": 3,
+     "title": "Fix GitHub Pages 404: ship built site at repo root",
+     "state": "closed",
+     "merged_at": "2026-07-31T09:12:33Z",
+     "created_at": "2026-07-31T09:05:55Z",
+     "author": "arena-ai-coding-agent[bot]",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/pull/3",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "number": 2,
+     "title": "YouTube channel auto-sync for @the.stickly",
+     "state": "closed",
+     "merged_at": "2026-07-31T08:22:00Z",
+     "created_at": "2026-07-31T08:16:48Z",
+     "author": "arena-ai-coding-agent[bot]",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/pull/2",
+     "repo": "editorweb.github.io"
+    },
+    {
+     "number": 1,
+     "title": "feat: Modern responsive portfolio for @the.stickly",
+     "state": "closed",
+     "merged_at": "2026-07-31T07:40:18Z",
+     "created_at": "2026-07-31T07:38:58Z",
+     "author": "arena-ai-coding-agent[bot]",
+     "url": "https://github.com/SticklyCodes-10/editorweb.github.io/pull/1",
+     "repo": "editorweb.github.io"
+    }
+   ],
+   "deps": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "react",
+    "react-dom",
+    "tailwind-merge",
+    "@tailwindcss/vite",
+    "@types/node",
+    "@types/react",
+    "@types/react-dom",
+    "@vitejs/plugin-react",
+    "tailwindcss",
+    "typescript",
+    "vite",
+    "vite-plugin-singlefile"
+   ],
+   "hasReadme": true
+  },
+  "SticklyCodes-10": {
+   "languages": {},
+   "commits": [
+    {
+     "sha": "fdec6c2",
+     "message": "Format README.md for improved readability",
+     "date": "2026-07-30T14:50:01Z",
+     "url": "https://github.com/SticklyCodes-10/SticklyCodes-10/commit/fdec6c2a67503e9f9a9668012fffa69da484d86a",
+     "repo": "SticklyCodes-10"
+    },
+    {
+     "sha": "f957f83",
+     "message": "Rewritten README.md",
+     "date": "2026-07-30T14:46:09Z",
+     "url": "https://github.com/SticklyCodes-10/SticklyCodes-10/commit/f957f835be4013641903889a0d95c6b2ce579122",
+     "repo": "SticklyCodes-10"
+    },
+    {
+     "sha": "32e3dbc",
+     "message": "Initial commit",
+     "date": "2026-07-30T14:18:51Z",
+     "url": "https://github.com/SticklyCodes-10/SticklyCodes-10/commit/32e3dbc76375ab16d0ecc3d3b937fc713db06426",
+     "repo": "SticklyCodes-10"
+    }
+   ],
+   "pulls": [],
+   "deps": [],
+   "hasReadme": true
+  }
+ },
+ "events": [
+  {
+   "type": "ForkEvent",
+   "repo": "PrismLauncher/PrismLauncher",
+   "date": "2026-10-14T14:18:43Z"
+  }
+ ],
+ "contributions": {
+  "total": 33,
+  "days": [
+   [
+    "2026-07-30",
+    4
+   ],
+   [
+    "2026-07-31",
+    20
+   ],
+   [
+    "2026-10-14",
+    1
+   ],
+   [
+    "2026-11-08",
+    8
+   ]
+  ]
+ }
+}
